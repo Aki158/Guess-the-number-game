@@ -1,2 +1,2 @@
-# Guess-the-number-game_Recursion
+# Guess-the-number-game
 RecursionCSのBackendProject1_Guess-the-number-gameのリポジトリーになります。
