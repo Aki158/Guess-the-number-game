@@ -11,11 +11,11 @@
 
 ランダムに設定された数字を推測してゲームのクリアを目指します!
 
-ユーザーは、最初に 最小値/最大値/難易度 を設定する必要があります。
+ユーザーは、最初に 最小値/最大値/入力回数の上限値 を設定する必要があります。
 
 設定した情報をもとにゲームの難易度が変わります。
 
-最初は、最小値と最大値の間隔を小さくして難易度は、easyにすることをオススメします!
+最初は、最小値と最大値の間隔を小さくして難易度をeasyにすることをオススメします!
 
 基本的な機能としては、初期設定/入力された数字の判定/メッセージの表示ができます。
 
@@ -99,7 +99,7 @@ python3 main.py
     - Please enter a minimum value (n) : `2`
     - Please enter a maximum value (m) : `5`
     - Choose a difficulty level between 0 and 2<br>easy  (Input : 0)<br>medium(Input : 1)<br>hard  (Input : 2)<br>Input : `0`
-3. ゲームを遊ぶ。<br>`Enter a number between 2 and 5 : `の後に数値を推測しながら入力する。<br>入力回数は、手順2.で設定した難易度によって変わります。
+3. ゲームを遊ぶ。<br>`Enter a number between 2 and 5 : `の後に正解の数字を推測しながら入力する。<br>入力回数は、手順2.で設定した難易度によって変わります。
 4. ゲームを終了する。<br>ゲームのクリアに関わらず、最後まで遊ぶとゲームが自動的に終了します。<br>ゲームを途中でやめたくなった場合は、`Ctrl + c`を入力してください。
 
 ## 💾使用技術
@@ -127,15 +127,20 @@ python3 main.py
 | 機能 | 内容 |
 | ------- | ------- |
 | メッセージの表示 | ゲームを進行するために、必要な情報をターミナルに表示します。 |
-| 初期設定 | 下記情報をもとに、ゲームの難易度を決めます。<br>・Please enter a minimum value (n) : <br>・Please enter a maximum value (m) : <br>・Choose a difficulty level between 0 and 2<br>　easy  (Input : 0)<br>　medium(Input : 1)<br>　hard  (Input : 2)<br>　Input :  |
+| 初期設定 | 下記情報をもとに、ゲームの難易度を決めます。<br>・Please enter a minimum value (n) : <br>・Please enter a maximum value (m) : <br>・Choose a difficulty level between 0 and 2<br>　easy  (Input : 0)<br>　medium(Input : 1)<br>　hard  (Input : 2)<br>　Input : |
 | 入力された数字の判定 | 入力された数字とランダムに設定された数字が一致しているか判定します。 |
-| 入力回数のカウント | 初期設定の難易度により入力回数の上限が決められます。<br>入力された数字を判定するたびに、+1カウントします。 |
+| 入力回数の上限値設定 | 初期設定のdifficulty levelにより入力回数の上限が下記のように決められます。<br>・easy : 5<br>・medium : 10<br>・hard : 15 |
+| 入力回数のカウント | 入力された数字を判定するたびに、+1カウントします。 |
 | ゲームの終了 | 下記条件に該当する場合は、ゲームが終了されます。<br>・入力された数字とランダムに設定された数字が一致した<br>・入力回数の上限に到達した |
 
 ## 📜作成の経緯
+⭐️後で記載する!!!
+
 作成した理由を記載する。
 
 ## ⭐️こだわった点
+⭐️後で記載する!!!
+
 テキストや参考にした記事などを再度読み返して技術の理解を深めてから書く。
 
 ここがエンジニアに一番読んでもらいたい箇所なのでできるだけ詳細に書く。
