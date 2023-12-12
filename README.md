@@ -84,7 +84,7 @@ cd Guess-the-number-game
 
 ## 🚀使用方法
 1. ゲームを起動する
-2. ゲームの指示に従い、数字を入力する
+2. ゲームの難易度を設定する
 3. ゲームを遊ぶ
 4. ゲームを終了する
 
@@ -95,7 +95,7 @@ cd Guess-the-number-game
 ```
 python3 main.py
 ```
-2. ゲームの指示に従い、数字を入力する。<br>今回は、下記のように情報を設定しました。
+2. ゲームの難易度を設定する。<br>今回は、下記のように設定しました。
     - Please enter a minimum value (n) : `2`
     - Please enter a maximum value (m) : `5`
     - Choose a difficulty level between 0 and 2<br>easy  (Input : 0)<br>medium(Input : 1)<br>hard  (Input : 2)<br>Input : `0`
@@ -146,8 +146,8 @@ python3 main.py
 ここがエンジニアに一番読んでもらいたい箇所なのでできるだけ詳細に書く。
 
 ## 📮今後の実装したいもの
-- [ ] ゲームのセーブ機能追加
 - [ ] ユーザーの登録
+- [ ] セーブ機能の追加
 
 ## 📑参考文献
 ### 公式ドキュメント
