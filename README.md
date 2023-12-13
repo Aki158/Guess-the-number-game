@@ -15,6 +15,8 @@
 
 設定した情報をもとにゲームの難易度が変わります。
 
+正解の数字は、最小値から最大値までの範囲内でランダムな数字が生成されます。
+
 最初は、最小値と最大値の間隔を小さくして難易度をeasyにすることをオススメします!
 
 基本的な機能としては、初期設定/入力された数字の判定/メッセージの表示ができます。
@@ -127,9 +129,10 @@ python3 main.py
 | 機能 | 内容 |
 | ------- | ------- |
 | メッセージの表示 | ゲームを進行するために、必要な情報をターミナルに表示します。 |
-| 初期設定 | 下記情報をもとに、ゲームの難易度を決めます。<br>・Please enter a minimum value (n) : <br>・Please enter a maximum value (m) : <br>・Choose a difficulty level between 0 and 2<br>　easy  (Input : 0)<br>　medium(Input : 1)<br>　hard  (Input : 2)<br>　Input : |
+| 難易度設定 | 下記情報をもとに、ゲームの難易度を決めます。<br>・Please enter a minimum value (n) : <br>・Please enter a maximum value (m) : <br>・Choose a difficulty level between 0 and 2<br>　easy  (Input : 0)<br>　medium(Input : 1)<br>　hard  (Input : 2)<br>　Input : |
+| ランダムな数字の生成 | 難易度設定のminimum valueからmaximum valueまでの範囲内でランダムな数字が生成されます。 |
 | 入力された数字の判定 | 入力された数字とランダムに設定された数字が一致しているか判定します。 |
-| 入力回数の上限値設定 | 初期設定のdifficulty levelにより入力回数の上限が下記のように決められます。<br>・easy : 5<br>・medium : 10<br>・hard : 15 |
+| 入力回数の上限値設定 | 難易度設定のdifficulty levelにより入力回数の上限が下記のように決められます。<br>・easy : 5<br>・medium : 10<br>・hard : 15 |
 | 入力回数のカウント | 入力された数字を判定するたびに、+1カウントします。 |
 | ゲームの終了 | 下記条件に該当する場合は、ゲームが終了されます。<br>・入力された数字とランダムに設定された数字が一致した<br>・入力回数の上限に到達した |
 
